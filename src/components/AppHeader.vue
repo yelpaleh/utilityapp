@@ -1,7 +1,7 @@
 <template>
   <header>
     <img alt="Vue logo" src="../assets/logo.png" height="50">
-    <p>Utility Application</p>
+    <p>Mgmt Application</p>
     <nav>
       <ul>
         <li><router-link to="/">Home</router-link></li>
