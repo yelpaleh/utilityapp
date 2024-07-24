@@ -1,5 +1,5 @@
 <template>
- <div>
+ <div v-if="airport">
    <p>{{ airport.name }} ({{ airport.abbreviation }})</p>
    <p>Located in {{ airport.city }}, {{ airport.state }}</p>
         <router-view />
@@ -7,9 +7,10 @@
 </template>
 
 <script>
-import { computed } from 'vue'
+import { computed, onMounted} from 'vue'
 import { useRoute } from 'vue-router'
 import airports from '@/data/airports.js'
+import router from '@/router'
 
 export default {
   setup() {
@@ -17,6 +18,12 @@ export default {
 	const airport = computed(() => {
 		return airports.filter(a => a.abbreviation === route.params.code.toUpperCase())[0]
 	})
+onMounted(() => {
+					if (!airport.value) {
+						// Navigate to 404 page here
+                        router.push({ name: 'PageNotFound' })
+					}
+				})
 
 	return { airport }
   }
