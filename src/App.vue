@@ -1,5 +1,23 @@
 
 <template>
+  <app-header />
+  <router-view/>
+  <app-footer />
+</template>
+
+<script>
+import AppHeader from '@/components/AppHeader.vue'
+import AppFooter from '@/components/AppFooter.vue'
+
+export default {
+  components: {
+    AppHeader,
+    AppFooter
+  }
+}
+</script>
+<!--
+<template>
   <div id="nav">
   <nav class="container navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Logo Here</a>
@@ -24,7 +42,7 @@
  </div>
   <router-view/>
 </template>
-
+-->
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -49,4 +67,5 @@
   background: crimson;
   border-radius: .5rem;
 }
+#app{margin-top: 0px !important;}
 </style>

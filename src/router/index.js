@@ -1,20 +1,39 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import AboutView from '../views/AboutView.vue'
+import Home from '../views/Home.vue'
+import About from '../views/About.vue'
 import Career from '../views/Career.vue'
 import Login from '../views/Login.vue'
+import AirportDetail from '@/views/AirportDetail.vue'
+import AirportDestinations from '@/views/AirportDestinations.vue'
+import PageNotFound from '@/views/PageNotFound.vue'
 
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: HomeView
+    component: Home
   },
-
+  {
+    path: '/airport/:code',
+    name: "AirportDetail",
+    component: AirportDetail,
+  },  //Dynamic Routes: airport/sea
+  {
+    path: '/airport/:code',
+    name: "AirportDetail",
+    component: AirportDetail,
+		children: [
+			{
+			  path: 'destinations',
+				name: 'AirportDestinations',
+				component: AirportDestinations
+			}
+		]//nested routes: airport/msp/destinations
+  },
   {
     path: '/about',
     name: 'About',
-    component:AboutView
+    component:About
   },
   {
     path: '/career',
@@ -25,6 +44,11 @@ const routes = [
     path: '/login',
     name: 'Login',
     component:Login
+  },
+  {
+    path: '/:catchAll(.*)*',
+    name: "PageNotFound",
+    component: PageNotFound,
   }
 ]
 // const routes = [
