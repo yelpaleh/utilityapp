@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 createApp(App).use(router).mount('#app')
-
+//commented
 // Make BootstrapVue available throughout your project
 //Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
