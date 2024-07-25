@@ -33,7 +33,7 @@ export default {
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 1rem;
   max-width: 960px;
-  margin: 0 auto;
+  margin: 10px auto 0 auto;
   paddding-top: 10px !important;
 }
 .airport {
@@ -51,23 +51,3 @@ export default {
   font-size: .8rem;
 }
 </style>
-
-<!-- <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
-</template>
-
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  }
-}
-</script>
--->

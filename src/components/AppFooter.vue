@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <p>Copyright &copy; {{ year }} </p>
+    <p>E-Commerce Application | Copyright &copy; {{ year }} </p>
   </footer>
 </template>
 
