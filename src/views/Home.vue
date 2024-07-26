@@ -30,24 +30,28 @@ export default {
 }
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 1rem;
-  max-width: 960px;
-  margin: 10px auto 0 auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 0.5rem;
+  max-width: 100%;
+  margin: 10px 5px 0 5px;
   paddding-top: 10px !important;
 }
 .airport {
   border: 3px solid;
   border-radius: .5rem;
   padding: 1rem;
+  margin-bottom:5px;
+  color:green;
 }
 .airport p:first-child {
   font-weight: bold;
   font-size: 2.5rem;
-  margin: 1rem 0;
 }
 .airport p:last-child {
   font-style: italic;
   font-size: .8rem;
+}
+a:hover{
+color:blue !important;
 }
 </style>

@@ -17,17 +17,17 @@
       </thead>
       <tbody>
         <tr v-for="item in items" :key="item.id">
-          <td>{{ item.id }}</td>          
-          <td>
+          <td width="5%">{{ item.id }}</td>          
+          <td width="15%">
             <input v-if="editId === item.id" v-model="editName" />
             <span v-else>{{ item.categoryName }}</span>
           </td>
-          <td>
+          <td width="20%">
           <input v-if="editId === item.id" v-model="editDescription" />
             <span v-else>{{ item.description }}</span>
           </td>
-          <td>{{item.imageUrl}} </td>
-          <td>
+          <td width="30%">{{item.imageUrl}} </td>
+          <td width="30%">
             <button class="btn btn-danger" style="margin:5px;" @click="deleteItem(item.id)">Delete</button>
             <button class="btn btn-primary" style="margin:5px;" v-if="editId !== item.id" @click="startEdit(item)">Edit</button>
             <button class="btn btn-success"style="margin:5px;" v-if="editId === item.id" @click="saveEdit(item.id)">Save</button>

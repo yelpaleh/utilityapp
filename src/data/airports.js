@@ -28,5 +28,55 @@ export default [
         passenger: [ 'Dublin', 'Paris', 'Punta Cana', 'Winnipeg', 'Tokyo', 'Denver', 'Tulsa', 'Washington DC', 'Orlando', 'Mexico City' ],
           cargo: [ 'Cincinnati', 'Omaha', 'Winnipeg', 'Chicago', 'St. Louis', 'Portland', 'Philadelphia', 'Milwaukee', 'Ontario' ]
         }
+    },
+    {
+      name: 'Seattle-Tacoma International Airport',
+      abbreviation: 'SEA',
+      city: 'Seattle',
+      state: 'WA',
+        destinations: {
+        passenger: [ 'Dublin', 'Mexico City', 'Vancouver', 'Albuquerque', 'Atlanta', 'Frankfurt', 'Amsterdam', 'Salt Lake City', 'Tokyo', 'Honolulu' ],
+          cargo: [ 'Spokane', 'Chicago', 'Dallas', ' Shanghai', 'Cincinnati', 'Luxenbourg', 'Anchorage', 'Juneau', 'Calgary', 'Ontario' ]
+        }
+    },
+    {
+      name: 'Minneapolis-Saint Paul International Airport',
+      abbreviation: 'MSP',
+      city: 'Bloomington',
+      state: 'MN',
+        destinations: {
+        passenger: [ 'Dublin', 'Paris', 'Punta Cana', 'Winnipeg', 'Tokyo', 'Denver', 'Tulsa', 'Washington DC', 'Orlando', 'Mexico City' ],
+          cargo: [ 'Cincinnati', 'Omaha', 'Winnipeg', 'Chicago', 'St. Louis', 'Portland', 'Philadelphia', 'Milwaukee', 'Ontario' ]
+        }
+    },
+    {
+      name: 'Minneapolis-Saint Paul International Airport',
+      abbreviation: 'MSP',
+      city: 'Bloomington',
+      state: 'MN',
+        destinations: {
+        passenger: [ 'Dublin', 'Paris', 'Punta Cana', 'Winnipeg', 'Tokyo', 'Denver', 'Tulsa', 'Washington DC', 'Orlando', 'Mexico City' ],
+          cargo: [ 'Cincinnati', 'Omaha', 'Winnipeg', 'Chicago', 'St. Louis', 'Portland', 'Philadelphia', 'Milwaukee', 'Ontario' ]
+        }
+    },
+    {
+      name: 'Seattle-Tacoma International Airport',
+      abbreviation: 'SEA',
+      city: 'Seattle',
+      state: 'WA',
+        destinations: {
+        passenger: [ 'Dublin', 'Mexico City', 'Vancouver', 'Albuquerque', 'Atlanta', 'Frankfurt', 'Amsterdam', 'Salt Lake City', 'Tokyo', 'Honolulu' ],
+          cargo: [ 'Spokane', 'Chicago', 'Dallas', ' Shanghai', 'Cincinnati', 'Luxenbourg', 'Anchorage', 'Juneau', 'Calgary', 'Ontario' ]
+        }
+    },
+    {
+      name: 'Minneapolis-Saint Paul International Airport',
+      abbreviation: 'MSP',
+      city: 'Bloomington',
+      state: 'MN',
+        destinations: {
+        passenger: [ 'Dublin', 'Paris', 'Punta Cana', 'Winnipeg', 'Tokyo', 'Denver', 'Tulsa', 'Washington DC', 'Orlando', 'Mexico City' ],
+          cargo: [ 'Cincinnati', 'Omaha', 'Winnipeg', 'Chicago', 'St. Louis', 'Portland', 'Philadelphia', 'Milwaukee', 'Ontario' ]
+        }
     }
   ]

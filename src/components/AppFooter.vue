@@ -16,8 +16,12 @@ export default {
 </script>
 
 <style lang="scss">
-footer {
-       margin-top:200px !important;
-  }
 
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 7px;
+  text-align: center;
+  color: white;
+}
 </style>
